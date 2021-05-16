@@ -1,0 +1,83 @@
+format = """
+$username\
+$hostname\
+$shlvl\
+$kubernetes\
+$directory\
+$vcsh\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status\
+$hg_branch\
+$docker_context\
+$package\
+$cmake\
+$dart\
+$deno\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$golang\
+$helm\
+$java\
+$julia\
+$kotlin\
+$nim\
+$nodejs\
+$ocaml\
+$perl\
+$php\
+$purescript\
+$python\
+$red\
+$ruby\
+$rust\
+$scala\
+$swift\
+$terraform\
+$vlang\
+$vagrant\
+$zig\
+$nix_shell\
+$conda\
+$memory_usage\
+$aws\
+$gcloud\
+$openstack\
+$env_var\
+$crystal\
+$custom\
+$cmd_duration\
+$lua\
+$jobs\
+$battery\
+$time\
+$line_break\
+$status\
+$shell\
+$character"""
+add_newline = false
+[package]
+disabled = true
+
+[character]
+success_symbol = "[➜](bold green)"
+error_symbol = "[➜](bold yellow)"
+vicmd_symbol = "[](bold blue)"
+
+[git_status]
+modified = "[](green) "
+deleted = "[](yellow) "
+untracked = "[](white) "
+
+[time]
+disabled = false
+use_12hr = false
+format = '[🕙](bold dimmed white)[$time](bold dimmed white) '
+time_format = "%l:%M"
+
+[battery]
+[[battery.display]]
+threshold = 20
