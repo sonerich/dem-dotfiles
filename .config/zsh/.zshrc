@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.config/zsh//.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
     print -P "%F{33}▓▒░ %F{220}Installing %F{33}DHARMA%F{220} Initiative Plugin Manager (%F{33}zdharma/zinit%F{220})…%f"
@@ -30,6 +37,8 @@ zinit wait lucid for \
 	    zsh-users/zsh-syntax-highlighting \
 
 zinit light zsh-users/zsh-history-substring-search
+zinit ice depth=1;
+zinit light romkatv/powerlevel10k
 
 # Auto suggestions
 ZSH_AUTOSUGGEST_STRATEGY=(
@@ -52,6 +61,9 @@ bindkey '^[[B' history-substring-search-down
 # vim mode
 bindkey -v
 
+#starship prompt
+# eval "$(starship init zsh)"
+
 # alias
 alias v='nvim'
 alias s='sudo '
@@ -61,3 +73,6 @@ alias gc='git commit -m'
 alias conf='cd ~/.config && nvim "$(sk)"'
 alias inst='paru -S --needed '
 alias del='paru -R '
+
+# To customize prompt, run `p10k configure` or edit ~/.config/zsh//.p10k.zsh.
+[[ ! -f ~/.config/zsh//.p10k.zsh ]] || source ~/.config/zsh//.p10k.zsh
