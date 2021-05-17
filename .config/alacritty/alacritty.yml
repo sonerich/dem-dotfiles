@@ -1,0 +1,49 @@
+font:
+  normal:
+    family: firacode
+    style: Regular
+
+  bold:
+    family: firacode
+    style: Bold
+
+  italic:
+    family: firacode
+    style: Italic
+
+  bold_italic:
+    family: firacode
+    style: Bold Italic
+
+  size: 16
+
+window:
+        padding:
+                x: 20
+                y: 20
+             
+        dynamic_padding: true
+        decorations: full
+colors:
+  primary:
+    backgound:  '#2e293a'
+    foreground: '#e8cac1'
+  # Normal colors
+  normal:
+    black:   '#2e293a'
+    red:     '#0c3bee'
+    green:   '#2268f3'
+    yellow:  '#f31da3'
+    blue:    '#2f70f4'
+    magenta: '#4a8bf5'
+    cyan:    '#9e66f6'
+    white:   '#e8cac1'
+  bright:
+    black:   '#a28d87'
+    red:     '#0c3bee'
+    green:   '#2268f3'
+    yellow:  '#f31da3'
+    blue:    '#2f70f4'
+    magenta: '#4a8bf5'
+    cyan:    '#9e66f6'
+    white:   '#e8cac1'
