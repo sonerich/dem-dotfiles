@@ -28,7 +28,7 @@ autoload compinit && compinit
 HISTFILE=~/.config/zsh/.histfile
 HISTSIZE=4096
 SAVEHIST=4096
-setopt autocd extendedglob nomatch
+setopt autocd extendedglob nomatch correct
 
 zinit ice wait lucid atload'_zsh_autosuggest_start'
 zinit light zsh-users/zsh-autosuggestions
@@ -60,6 +60,7 @@ bindkey '^[[B' history-substring-search-down
 
 # vim mode
 bindkey -v
+bindkey '^[[Z' undo                                             # Shift+tab undo last action
 
 #starship prompt
 # eval "$(starship init zsh)"
@@ -73,6 +74,9 @@ alias gc='git commit -m'
 alias conf='cd ~/.config && nvim "$(sk)"'
 alias inst='paru -S --needed '
 alias del='paru -R '
+alias aur='sh ~/Scripts/aur.sh'
+alias rm='rm -I'
+alias ls='ls --color=auto'
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh//.p10k.zsh.
 [[ ! -f ~/.config/zsh//.p10k.zsh ]] || source ~/.config/zsh//.p10k.zsh
