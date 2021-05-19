@@ -1,1 +1,1 @@
-ZDOTDIR=/home/son/.config/zsh/
+ZDOTDIR=$HOME/.config/zsh/
