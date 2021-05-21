@@ -78,5 +78,10 @@ alias aur='sh ~/Scripts/aur.sh'
 alias rm='rm -I'
 alias ls='ls --color=auto'
 
-# To customize prompt, run `p10k configure` or edit ~/.config/zsh//.p10k.zsh.
-[[ ! -f ~/.config/zsh//.p10k.zsh ]] || source ~/.config/zsh//.p10k.zsh
+# To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
+if [ "$TERM" = "linux" ]; then
+	source ~/.config/zsh/.p10k_tty.zsh
+else
+	source ~/.config/zsh/.p10k_terminal.zsh
+fi
+

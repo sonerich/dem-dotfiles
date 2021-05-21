@@ -1,2 +1,2 @@
 ZDOTDIR=$HOME/.config/zsh/
-EDITOR=nvim
+EDITOR=/usr/bin/nvim
