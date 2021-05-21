@@ -12,6 +12,7 @@ alias ya='yadm add '
 alias ys='yadm status '
 alias yc='yadm commit -m '
 alias yp='yadm push'
+alias yr='yadm rm '
 
 alias conf='cd ~/.config/ && nvim "$(sk)"'
 alias inst='paru -S --skipreview --needed '
