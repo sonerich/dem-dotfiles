@@ -18,6 +18,6 @@ alias yr='yadm rm '
 alias conf="sh ~/Scripts/conf.zsh"
 alias inst='paru -S --skipreview --needed '
 alias del='paru -R '
-alias aur='sh ~/Scripts/aur.sh'
+alias aur='sh ~/Scripts/aur.zsh'
 alias rm='rm -I'
 alias ls='ls --color=auto'
