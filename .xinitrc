@@ -29,4 +29,7 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-exec "$(cat ~/.config/.wm)"
+# Monitor adjustment
+xrandr --output HDMI-1 --left-of VGA-1
+
+exec "$(cat ~/.config/wm)"
