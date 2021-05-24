@@ -15,7 +15,7 @@ font:
     family: firacode
     style: Bold Italic
 
-  size: 16
+  size: 12
 
 window:
         padding:
