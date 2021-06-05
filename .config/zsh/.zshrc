@@ -5,8 +5,8 @@ done
 
 ### General settings
 HISTFILE=~/.config/zsh/.histfile
-HISTSIZE=4096
-SAVEHIST=4096
+HISTSIZE=8192
+SAVEHIST=8192
 setopt autocd extendedglob nomatch correct
 
 # history searching

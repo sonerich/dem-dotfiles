@@ -15,35 +15,35 @@ font:
     family: firacode
     style: Bold Italic
 
-  size: 12
+  size: 11
 
 window:
-        padding:
-                x: 20
-                y: 20
-             
-        dynamic_padding: true
-        decorations: full
+  padding:
+    x: 20
+    y: 20
+  dynamic_padding: true
+
 colors:
   primary:
-    backgound:  '#2e293a'
-    foreground: '#e8cac1'
-  # Normal colors
+    background: '#282828'
+    foreground: '#fbf1c7'
+
   normal:
-    black:   '#2e293a'
-    red:     '#0c3bee'
-    green:   '#2268f3'
-    yellow:  '#f31da3'
-    blue:    '#2f70f4'
-    magenta: '#4a8bf5'
-    cyan:    '#9e66f6'
-    white:   '#e8cac1'
+    black:   "#282828"
+    red:     "#cc241d"
+    green:   "#98971a"
+    yellow:  "#d79921"
+    blue:    "#458588"
+    magenta: "#b16286"
+    cyan:    "#689d6a"
+    white:   "#a89984" 
+
   bright:
-    black:   '#a28d87'
-    red:     '#0c3bee'
-    green:   '#2268f3'
-    yellow:  '#f31da3'
-    blue:    '#2f70f4'
-    magenta: '#4a8bf5'
-    cyan:    '#9e66f6'
-    white:   '#e8cac1'
+    black:   "#928374"
+    red:     "#fb4934"
+    green:   "#b8bb26"
+    yellow:  "#fabd2f"
+    blue:    "#83a598"
+    magenta: "#d3869b"
+    cyan:    "#8ec07c"
+    white:   "#ebdbb2" 
